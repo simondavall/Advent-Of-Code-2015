@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Aoc/Aoc.csproj" />
+  <Project Path="AocHelper/AocHelper.csproj" />
+  <Project Path="Day01/Day01.csproj" />
+</Solution>
