@@ -1,5 +1,4 @@
 *.o
-aoc
 playground
 bin
 obj
