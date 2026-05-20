@@ -53,6 +53,11 @@ public static class Helper
 
     return intArray;
   }
+  
+  public static List<int> ToIntList(this string[] array)
+  {
+    return array.ToIntArray().ToList();
+  }
 
   public static int[] ToIntArray(this Span<string> array)
   {
@@ -73,7 +78,7 @@ public static class Helper
 
     return longArray;
   }
-
+  
   public static char[][] ToCharArray(this string[] array)
   {
     var charArr = new char[array.Length][];

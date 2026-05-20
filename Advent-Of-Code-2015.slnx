@@ -2,4 +2,5 @@
   <Project Path="Aoc/Aoc.csproj" />
   <Project Path="AocHelper/AocHelper.csproj" />
   <Project Path="Day01/Day01.csproj" />
+  <Project Path="Day02/Day02.csproj" />
 </Solution>
