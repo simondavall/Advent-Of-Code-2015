@@ -3,8 +3,8 @@
 internal static partial class Program {
   private const string Title = "\n## Day 3: Perfectly Spherical Houses in a Vacuum ##";
   private const string AdventOfCode = "https://adventofcode.com/2015/day/3";
-  private const long ExpectedPartOne = 0;
-  private const long ExpectedPartTwo = 0;
+  private const long ExpectedPartOne = 2572;
+  private const long ExpectedPartTwo = 2631;
 
 
   private static readonly Dictionary<char, (int, int)> Directions = new()
