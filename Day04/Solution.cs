@@ -38,13 +38,9 @@ internal static partial class Program
             long end = Math.Min(start + batchSize - 1, long.MaxValue);
             long best = long.MaxValue;
 
-            Parallel.For(0, workers, worker =>
-            {
+            Parallel.For(0, workers, worker => {
                 // Allocate once per worker, not per hash.
-                Span<byte> input = bufferLength <= 256
-                    ? stackalloc byte[bufferLength]
-                    : new byte[bufferLength];
-
+                Span<byte> input = stackalloc byte[bufferLength];
                 Span<byte> hash = stackalloc byte[16];
 
                 prefix.CopyTo(input);
@@ -88,8 +84,7 @@ internal static partial class Program
     {
         long current;
 
-        do
-        {
+        do {
             current = Volatile.Read(ref target);
 
             if (value >= current)
